@@ -31,13 +31,14 @@ function my_keydown(e)
 	
 		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
 		//write a code to check the type of key pressed
-		aplhabetkey();
+		{aplhabetkey();
 		document.getElementById("d1").innerHTML="You have pressed the alphabet key";
-		console.log("alphabet key");
+		console.log("alphabet key");}
+		else{
 		otherkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+		document.getElementById("d1").innerHTML="You pressed symbol or other key";}
 	}
-}
+
 
 function aplhabetkey()
 {
@@ -48,14 +49,18 @@ function aplhabetkey()
 }
 function numberkey()
 {
-	
+	img_image="numkey.png";
+	add();
 }
 function arrowkey()
 {
+	img_image="Arrkey.png";
+	add();
 }
 function specialkey()
 {
-	
+	img_image="spkey.png";
+	add();
 }
 function otherkey()
 {
